@@ -1,0 +1,104 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: rgb(206, 220, 225);
+    text-align:left;
+    text-align: start;
+}
+#container{
+    width :95%;
+    margin:4vw auto;
+    height:75%;
+    padding:0.8vw;
+    background:  rgb(206, 220, 225);
+    border-radius: calc(20px + 0.8vw);
+    background-size: cover;
+    background-position: 0px 0px 5px;
+    box-shadow: 10px 10px 15px -1px  rgb(72, 79, 81) inset,
+                -10px -10px 10px -1px  rgb(251, 251, 251) inset;
+    display:flex;
+}
+#text{
+    flex-basis: 68%;
+}
+p{
+    margin-top:3vw;
+    margin-left: 1vw;
+    font-size: 2.5vmin;
+}
+h1{
+    margin-top:3vw;
+    margin-left: 1vw;
+    position: relative;
+    top:2vw;
+    color:rgb(1, 82, 86);
+    font-size: 5vmin;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    font-weight: bolder;
+}
+button{
+    height:25vw;
+    width:25vw;
+    flex-basis: 28%;
+    padding:0.2vw;
+    background:  rgb(206, 220, 225);
+    margin:4vw;
+    margin-left: 4vw;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: 0px 0px 5px;
+    box-shadow: 10px 10px 15px -1px  rgb(72, 79, 81) ,
+                -10px -10px 10px -1px  rgb(251, 251, 251); 
+}
+img{
+    height:98%;
+    width:98%;
+    border-radius: 20px;
+}
+button:hover{
+    transition-property:scale;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    scale:1.03;
+}
+
+@media screen and (max-width:480px) {
+
+    #container{
+        flex-direction: column;
+        height:80vh;
+        padding:1.5vh;
+        margin:2vh auto;
+        width:85vw;
+        box-shadow: 5px 5px 10px -1px  rgb(72, 79, 81) inset,
+        -5px -5px 10px -1px  rgb(251, 251, 251) inset;
+    }
+
+    button{
+        height:40vh;
+        width:80vw;
+        box-shadow: 7px 7px 10px -1px  rgb(72, 79, 81) ,
+        -7px -7px 10px -1px  rgb(251, 251, 251); 
+}
+    #text{
+        height:30vh;
+        width:80vw;
+    }
+    h1{
+        font-size: 4vh;
+        margin-left: 3vh;
+    }
+    p{
+        font-size: 2vh;
+        margin-left: 3vh;
+    }
+    
+    
+}
